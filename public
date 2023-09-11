@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>* {
+	box-sizing: border-box;
+
+}
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.4rem;
+	background: whitesmoke;
+	margin: 0;
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+border-bottom: 1px solid lightblue;
+}
+h1{
+text-align: center;
+text-shadow: 4px -1px 12px rgba(0,0,0,0.9);}
+form{
+text-align:center;
+margin-bottom: 20px;
+}
+input[type="text"]{
+padding:8px;
+width:300px;
+height: 35px;
+}
+ul {
+	list-style-position: inside;
+	width: 600px;
+	max-width: 100%;
+	background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+	padding: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+}
+li {
+padding: 0 0 0 1rem;
+}
+li:not(:last-child) {
+border-bottom: 1px solid lightblue;
+}
+li:first-child {
+	margin-top: 1rem;
+}
+li:last-child {
+	margin-bottom: 1rem;
+}
+button{
+width: 80px;
+height: 35px;
+border: none;
+outline: none;
+background: #2f2f2f;
+color: #fff;
+font-size: 20px;
+border-radius: 40px;
+text-align: center;
+box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+button:hover{
+background-color:rgb(1, 86, 255);
+}
+</style>
+
+
+
+<title>Task Management System</title>
+</head>
+<body>
+<h1>Task Management System</h1>
+<form id="taskEntry">
+<input type="text" id="task-input" placeholder="Enter your Task">
+<button type="submit">Add</button>
+</form>
+<ul id="tasksDisplay" class="tasks">
+<li>Wake up</li>
+<li>Attend</li>
+<li>Lunch</li>
+</ul>
+</body>
+</html>
